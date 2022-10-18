@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <BaseOutputPath>C:\c#\Chat3</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Controllers\IServer.cs" />
+    <Compile Include="Controllers\ServerController.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Views\ServerForm.cs" />
+    <Compile Include="Views\ServerForm.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ServerForm.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TcpChatLib\TcpChatLib.csproj" />
+  </ItemGroup>
+
+</Project>
